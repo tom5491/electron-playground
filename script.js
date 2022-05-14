@@ -34,7 +34,8 @@ toggle.addEventListener('colorschemechange', () => {
 });
 
 function showSnackbar(title, body) {
-    document.getElementById('toast-text').innerText = body;
+    const notificationText = `A new task has been added: <i>${body}</i>`;
+    document.getElementById('toast-text').innerText = notificationText;
     var x = document.getElementById("snackbar");
     x.className = "show";
 
