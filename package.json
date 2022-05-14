@@ -1,0 +1,26 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "electron": "ELECTRON_DISABLE_SECURITY_WARNINGS=true electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.2.3",
+    "electron-builder": "^23.0.3"
+  },
+  "build": {
+    "appId": "com.ikobit.desktop-notifications"
+  },
+  "dependencies": {
+    "commonjs": "0.0.1"
+  }
+}
